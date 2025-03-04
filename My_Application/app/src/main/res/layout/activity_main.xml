@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="70px"
+    tools:ignore="PxUsage">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profileHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="#43A047"
+            android:textSize="90px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/profileContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm a student"
+            android:layout_below="@+id/profileHeader"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/profileContent"/>
+
+        <TextView
+            android:id="@+id/aboutMeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20px"
+            android:text="About me"
+            android:textColor="#43A047"
+            android:textSize="60px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/aboutMeContent"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutMeHeader"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:text="I'm a lovely cat. I have passion IT and want to become data analyst"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/detailsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutMeContent"
+            android:layout_alignParentStart="true"
+            android:text="Details"
+            android:textColor="#43A047"
+            android:textSize="60px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/nameHeader"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_below="@+id/detailsHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Pham Kim Long"
+            android:layout_below="@+id/nameHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/ageHeader"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="21 years"
+            android:layout_below="@+id/ageHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/locationHeader"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:layout_below="@+id/age"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="UIT, VNU-HCM"
+            android:layout_below="@+id/locationHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20px"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="400px"
+            android:layout_height="500px"
+            android:importantForAccessibility="no"
+            android:src="@drawable/profilepic"
+            android:layout_below="@+id/line"
+            android:layout_alignEnd="@+id/aboutMeHeader"
+            android:layout_alignParentEnd="true"
+            />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/location"/>
+
+        <TextView
+            android:id="@+id/experienceHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:text="Experiences"
+            android:textColor="#43A047"
+            android:textSize="90px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/educationHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experienceHeader"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="Education"
+            android:textColor="#43A047"
+            android:textSize="60px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="UIT, VNU-HCM"
+            android:layout_below="@+id/educationHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/ex"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/education"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:text="Qpr 2019 - June 2024"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/educationContent"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Information system"
+            android:layout_below="@+id/educationHeader"
+            android:textStyle="bold"
+            android:layout_alignEnd="@+id/educationHeader"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/exContent"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/educationContent"
+            android:layout_alignEnd="@+id/ex"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10px"
+            android:text="The education was mainly System design-based course. But i also learn about web. Data analysis and more. During my time in college, specialized in OOP, data science. Now, I'm learing web development."
+            tools:ignore="HardcodedText,TextSizeCheck" />
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/exContent"/>
+
+        <TextView
+            android:id="@+id/workingHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:text="Working experiences"
+            android:textColor="#43A047"
+            android:textSize="60px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/working"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="UIT, VNU-HCM"
+            android:layout_below="@+id/workingHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/ex1"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Qpr 2019 - June 2024"
+            android:layout_below="@+id/working"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/workingContent"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Information system"
+            android:layout_below="@+id/workingHeader"
+            android:textStyle="bold"
+            android:layout_alignEnd="@+id/workingHeader"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10px"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/ex1Content"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:text="Working as a Fresher developer on a dating function on Facebook page. Dating function is an app as Tinder"
+            android:layout_below="@+id/workingContent"
+            android:layout_alignEnd="@+id/ex1"
+            android:layout_alignParentEnd="true"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
